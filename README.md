@@ -13,7 +13,7 @@ In this paper, we introduce **TPSR**, a novel transformer-based planning framewo
 </p>
 
 <!-- <p align="center">
-<img src="./images/tpsr_overview.jpg" width="60%" /> 
+<img src="./images/tpsr_overview.jpg" width="90%" /> 
  <!-- <br>
 <b>Overview of TPSR’s key steps: Selection, Expansion, Evaluation, and Backpropagation. MCTS-guided decoding interacts with the pretrained transformer SR model in the expansion and evaluation steps employing the transformer top-k sampling and beam search, respectively. The designed reward is then used to guide the backpropagation.
 </p>  -->
