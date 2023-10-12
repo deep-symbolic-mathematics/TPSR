@@ -115,7 +115,7 @@ For running the code on Strogatz or Black-box datasets, simply adjust the `pmlb_
 
 
 ## Run - In-Domain Datasets
-**In-Domain** datasets are generated, following the validation data gneration protocol suggested in [E2E](https://arxiv.org/pdf/2204.10532.pdf). For details, refer to the `generate_datapoints` function [here](./symbolicregression/envs/generators.py). You can also modify data generation parameters [here](./symbolicregression/envs/environment.py). For exampl, you can adjust parameters like `prediction_sigmas` to control extrapolation. A sigma `1` aligns with the training data range, while `>1` is for extrapolation ranges.  The In-domain validation datasets are generated on-the-fly. For consistent evaluations across models, consider setting a fixed seed.
+**In-Domain** datasets are generated, following the validation data gneration protocol suggested in [E2E](https://arxiv.org/pdf/2204.10532.pdf). For details, refer to the `generate_datapoints` function [here](./symbolicregression/envs/generators.py). You can also modify data generation parameters [here](./symbolicregression/envs/environment.py). For example, you can adjust parameters like `prediction_sigmas` to control extrapolation. A sigma `1` aligns with the training data range, while `>1` is for extrapolation ranges.  The In-domain validation datasets are generated on-the-fly. For consistent evaluations across models, consider setting a fixed seed.
 
 
 Pre-trained E2E Model (Sampling):
