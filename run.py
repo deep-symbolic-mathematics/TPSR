@@ -15,7 +15,7 @@ from evaluate import evaluate_pmlb, evaluate_pmlb_mcts, evaluate_in_domain, eval
 
 if __name__ == '__main__':
     #load E2E model
-    model_path = "../../../symbolicregression/saved_models/pretrained/model.pt" 
+    model_path = "/symbolicregression/saved_models/pretrained/model.pt" 
     try:
         if not os.path.isfile(model_path): 
             url = "https://dl.fbaipublicfiles.com/symbolicregression/model1.pt"
