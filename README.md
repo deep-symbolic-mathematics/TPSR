@@ -28,6 +28,7 @@ pip install -r requirements.txt
 1. Download Pre-trained Models:
     * **End-to-End (E2E) SR Transformer model** is available [here](https://dl.fbaipublicfiles.com/symbolicregression/model1.pt).
     * **NeSymReS model** is available [here](https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales).
+      
 After downloading, extract both models to this directory. They should be located under the `pretrained_models/` folder.
 
 2. Download Benchmark Datasets:
