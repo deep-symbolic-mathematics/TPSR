@@ -54,7 +54,7 @@ We have created `run.sh` script to execute Transformer-based Planning for Equati
 | `ucb_constant`    | Exploration Weight in UCB                                 | 1.0     |
 | `uct_alg`    | UCT Algorithm $\in$ {uct, p_uct, var_p_uct}                                 | uct     |
 | `max_input_points`    | Maximum Input Points Observed by Pre-trained Model ($N$)                                 | 200     |
-| `max_number_bags`    | Number of Bags with for the Input Points ($B$)                                | 10     |
+| `max_number_bags`    | Maximum Number of Bags for Input Points ($B$)                                | 10     |
 | `pmlb_data_type`    | PMLB Data Group $\in$ {feynman, strogatz, black-box}                                 | feynman     |
 | `target_noise`    | Target Noise added to y_to_fit in PMLB                                | 0.0     |
 | `beam_type`    | Decoding Type for Pre-trained Models $\in$ {search, sampling}                                | sampling     |
