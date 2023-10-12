@@ -7,7 +7,7 @@ Official Implementation of **[Transformer-based Planning for Symbolic Regression
 In this paper, we introduce **TPSR**, a novel transformer-based planning framework for symbolic regression by leveraging priors of large-scale pretrained models and incorporating lookahead planning. TPSR incorporates Monte Carlo Tree Search (MCTS) into the transformer decoding process. Unlike conventional decoding strategies, TPSR enables the integration of non-differentiable feedback, such as fitting accuracy and complexity, as external sources of knowledge into the transformer-based equation generation process.
 
 <p align="center">
-<img src="./images/Media13_Final.gif" width="60%" /> 
+<img src="./images/Media13_Final.gif" width="100%" /> 
  <br>
 <b>TPSR uncovering the Governing symbolic mathematics of data, providing enhanced extrapolation capabilities.
 </p>
