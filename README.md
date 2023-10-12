@@ -12,15 +12,11 @@ In this paper, we introduce **TPSR**, a novel transformer-based planning framewo
 <b>TPSR uncovering the Governing symbolic mathematics of data, providing enhanced extrapolation capabilities.
 </p>
 
-<!-- <p align="center">
-<img src="./images/tpsr_overview.jpg" width="90%" /> 
- <!-- <br>
-<b>Overview of TPSR’s key steps: Selection, Expansion, Evaluation, and Backpropagation. MCTS-guided decoding interacts with the pretrained transformer SR model in the expansion and evaluation steps employing the transformer top-k sampling and beam search, respectively. The designed reward is then used to guide the backpropagation.
-</p>  -->
-
 
 ## Installation
+
 To run the code, create a conda `Python 3.7`` environment and install the dependencies by running the following command.
+
 ```
 conda create --name tpsr python=3.7
 pip install -r requirements.txt
