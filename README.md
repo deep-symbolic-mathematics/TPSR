@@ -158,6 +158,10 @@ python run.py --eval_mcts_in_domain True \
                    --debug
 ```
 
+## Demo
+We have also included a small demo that runs TPSR with E2E backbone on your dataset. You can play with [here](./tpsr_demo.py) 
+
+
 ## Citation
 If you find the paper or the source code useful to your projects, please cite the following:
 <pre>
