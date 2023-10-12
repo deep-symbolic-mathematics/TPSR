@@ -61,7 +61,7 @@ We have created `run.sh` script to execute Transformer-based Planning for Equati
 | `beam_size`    | Decoding Size ($s$) for Pre-trained Models (Beam Size, or Sampling Size)                                | 10     |
 | `n_trees_to_refine`    | Number of Refinements in Decodings $\in$ {1,...,$s$}                                | 10     |
 | `prediction_sigmas`    | Sigmas of Extrapolation Eval Data Sampling (In-domain)                                | 1,2,4,8,16     |
-| `eval_input_length_modulo`    | Number of Eval Points (In-domain). Set to 50 Yields $N_{test}=[50,100,150,200]$ per Range.                               | 50     |
+| `eval_input_length_modulo`    | Number of Eval Points (In-domain). Set to 50 Yields $N_{test}=[50,100,150,200]$ per Extrapolation Range.                               | 50     |
 | `run_id`    | Index of the run                                 | 1      |
 
 
