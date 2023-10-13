@@ -109,7 +109,7 @@ python run.py --eval_mcts_on_pmlb True \
                    --max_number_bags 10 \
                    --save_results True
 ```
-For running the code on Strogatz or Black-box datasets, simply adjust the `pmlb_data_type` parameter to either `strogatz` or `blackbox`. The commands provided above are set for the Feynman datasets. You can also modify the `target_noise` and other parameters to suit your experiments. Running each commands saves the results for all datasets and metrics in a `.csv` file. 
+For running the code on Strogatz or Black-box datasets, simply adjust the `pmlb_data_type` parameter to either `strogatz` or `blackbox`. The commands provided above are set for the Feynman datasets. You can also modify the `target_noise` and other parameters to suit your experiments. Running each command saves the results for all datasets and metrics in a `.csv` file. 
 
 
 
