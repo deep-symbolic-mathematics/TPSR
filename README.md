@@ -9,7 +9,7 @@ In this paper, we introduce **TPSR**, a novel transformer-based planning framewo
 <p align="center">
 <img src="./images/Media13_Final.gif" width="100%" /> 
  <br>
-<b>TPSR uncovering the Governing symbolic mathematics of data, providing enhanced extrapolation capabilities.</b>
+<b>TPSR uncovering the governing symbolic mathematics of data, providing enhanced extrapolation capabilities.</b>
 </p>
 
 
