@@ -15,7 +15,7 @@ from evaluate import evaluate_pmlb, evaluate_pmlb_mcts, evaluate_in_domain, eval
 
 if __name__ == '__main__':
     #load E2E model
-    model_path = "/symbolicregression/saved_models/model.pt" 
+    model_path = "./symbolicregression/saved_models/model.pt" 
     try:
         if not os.path.isfile(model_path): 
             url = "https://dl.fbaipublicfiles.com/symbolicregression/model1.pt"
@@ -98,7 +98,7 @@ if __name__ == '__main__':
                 save=True,
                 logger=None,
                 save_file=None,
-                save_suffix="./eval_result/final/eval_in-domain_tpsr_l{}_b{}_k{}_r{}_cache{}_noise{}.csv".format(params.lam,
+                save_suffix="./eval_result/eval_in-domain_tpsr_l{}_b{}_k{}_r{}_cache{}_noise{}.csv".format(params.lam,
                                                                                                     params.num_beams,
                                                                                                     params.width,
                                                                                                     params.rollout,
@@ -169,7 +169,7 @@ if __name__ == '__main__':
             save=save,
             filter_fn=filter_fn,
             save_file=None,
-            save_suffix="./eval_result/final/eval_{}_tpsr_l{}_b{}_k{}_r{}_cache{}_noise{}.csv".format(params.pmlb_data_type,
+            save_suffix="./eval_result/eval_{}_tpsr_l{}_b{}_k{}_r{}_cache{}_noise{}.csv".format(params.pmlb_data_type,
                                                                                                     params.lam,
                                                                                                     params.num_beams,
                                                                                                     params.width,
