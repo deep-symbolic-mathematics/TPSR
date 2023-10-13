@@ -79,7 +79,7 @@ def evaluate_pmlb(
         )
 
         all_datasets = pd.read_csv(
-            "../../../symbolicregression/data/pmlb/pmlb/all_summary_stats.tsv",
+            "./datasets/pmlb/pmlb/all_summary_stats.tsv",
             sep="\t",
         )
         regression_datasets = all_datasets[all_datasets["task"] == "regression"]
@@ -91,10 +91,10 @@ def evaluate_pmlb(
         if filter_fn is not None:
             problems = problems[filter_fn(problems)]
         problem_names = problems["dataset"].values.tolist()
-        pmlb_path = "../../../symbolicregression/data/pmlb/datasets/"
+        pmlb_path = "./datasets/pmlb/datasets/"
 
         feynman_problems = pd.read_csv(
-            "../../../symbolicregression/data/feynman/FeynmanEquations.csv",
+            "./datasets/feynman/FeynmanEquations.csv",
             delimiter=",",
         )
         feynman_problems = feynman_problems[["Filename", "Formula"]].dropna().values
@@ -244,7 +244,7 @@ def evaluate_pmlb_mcts(
         )
 
         all_datasets = pd.read_csv(
-            "../../../symbolicregression/data/pmlb/pmlb/all_summary_stats.tsv",
+            "./datasets/pmlb/pmlb/all_summary_stats.tsv",
             sep="\t",
         )
         regression_datasets = all_datasets[all_datasets["task"] == "regression"]
@@ -257,10 +257,10 @@ def evaluate_pmlb_mcts(
             problems = problems[filter_fn(problems)]
             problems = problems.loc[problems['n_features']<11]
         problem_names = problems["dataset"].values.tolist()
-        pmlb_path = "../../../symbolicregression/data/pmlb/datasets/"  # high_dim_datasets
+        pmlb_path = "./datasets/pmlb/datasets/"  # high_dim_datasets
 
         feynman_problems = pd.read_csv(
-            "../../../symbolicregression/data/feynman/FeynmanEquations.csv",
+            "./datasets/feynman/FeynmanEquations.csv",
             delimiter=",",
         )
         feynman_problems = feynman_problems[["Filename", "Formula"]].dropna().values
