@@ -159,6 +159,10 @@ python run.py --eval_mcts_in_domain True \
                    --debug
 ```
 
+## Runs With NeSymReS Backbone
+To be released soon.
+
+
 ## Demo
 We have also included a small demo that runs TPSR with E2E backbone on your dataset. You can play with it [here](./tpsr_demo.py) 
 
