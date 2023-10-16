@@ -186,3 +186,6 @@ This repository is licensed under MIT licence.
 
 
 This code is developed from other open source projects: including: [End-to-End Symbolic Regression with Transformers (E2E)](https://github.com/facebookresearch/symbolicregression), [Neural Symbolic Regression that scales (NeSymReS)](https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales), [Dyna Gym](https://github.com/SuReLI/dyna-gym), and [transformers](https://github.com/huggingface/transformers). We thank the original contributors of these works for open-sourcing their valuable source codes. 
+
+## Contact Us
+For any questions or issues, you are welcome to open an issue in this repo, or contact us at parshinshojaee@vt.edu, and mmeidani@andrew.cmu.edu .
