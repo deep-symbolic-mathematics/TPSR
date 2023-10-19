@@ -32,8 +32,8 @@ pip install -r requirements.txt
 After downloading, extract both models to this directory. They should be located under the `pretrained_models/` folder.
 
 2. Download Benchmark Datasets:
-    * **Feynman** datasets are [here](https://space.mit.edu/home/tegmark/aifeynman.html)
-    * **PMLB** datasets are also [here](https://github.com/EpistasisLab/pmlb/tree/master/datasets). Data points of PMLB datasets are used in the [SRBench: A Living Benchmark for Symbolic Regression)](https://github.com/cavalab/srbench), containing three data groups: **Feynman**, **Strogatz**, and **Black-box**.
+    * **Feynman** equations are [here](https://space.mit.edu/home/tegmark/aifeynman.html)
+    * **PMLB** regression datasets are also [here](https://github.com/EpistasisLab/pmlb/tree/master/datasets). Data points of PMLB datasets are used in the [SRBench: A Living Benchmark for Symbolic Regression)](https://github.com/cavalab/srbench), containing three data groups: **Feynman**, **Strogatz**, and **Black-box**.
       
 Extract the datasets to this directory, Feynman datasets should be in `datasets/feynman/`, and PMLB datasets should be in `datasets/pmlb/`. 
 
