@@ -1,9 +1,3 @@
-# python run.py --pmlb_data_type feynman --lam 0.1 --uct_alg var_p_uct --ucb_constant 4. --ucb_base 10. --run_id 4
-
-
-# python run.py --pmlb_data_type feynman --lam 0.1 --uct_alg uct --ucb_constant 4. --ucb_base 10. --run_id 4
-
-
 python run.py --eval_mcts_on_pmlb True \
                    --pmlb_data_type feynman \
                    --target_noise 0.0 \
