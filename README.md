@@ -171,7 +171,7 @@ We have also included a small demo that runs TPSR with E2E backbone on your data
 If you find the paper or the source code useful to your projects, please cite the following:
 <pre>
 @inproceedings{
-shojaee2023transformerbased,
+tpsr2023,
 title={Transformer-based Planning for Symbolic Regression},
 author={Parshin Shojaee and Kazem Meidani and Amir Barati Farimani and Chandan K. Reddy},
 booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
