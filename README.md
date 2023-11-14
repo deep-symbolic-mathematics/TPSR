@@ -1,4 +1,4 @@
-# Symbolic Regression with Transformers & Lookahead Planning
+# SR with Transformers & Lookahead Planning
 
 Official Implementation of **[Transformer-based Planning for Symbolic Regression](https://arxiv.org/abs/2303.06833)** (accepted at NeurIPS 2023). 
 
