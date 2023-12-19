@@ -33,37 +33,37 @@ After downloading, extract both models to this directory. They should be located
 
 2. Download Benchmark Datasets:
     * **Feynman** equations are [here](https://space.mit.edu/home/tegmark/aifeynman.html)
-    * **PMLB** regression datasets are also [here](https://github.com/EpistasisLab/pmlb/tree/master/datasets). Data points of PMLB datasets are used in the [SRBench (A Living Benchmark for Symbolic Regression)](https://github.com/cavalab/srbench), containing three data groups: **Feynman**, **Strogatz**, and **Black-box**.
+    * **PMLB** datasets are also [here](https://github.com/EpistasisLab/pmlb/tree/master/datasets). Data points of PMLB datasets are used in the [SRBench (A Living Benchmark for Symbolic Regression)](https://github.com/cavalab/srbench), containing three data groups: **Feynman**, **Strogatz**, and **Black-box**.
       
 Extract the datasets to this directory, Feynman datasets should be in `datasets/feynman/`, and PMLB datasets should be in `datasets/pmlb/`. 
 
 
 ## Run
-We have created `run.sh` script to execute Transformer-based Planning for Equation Generation based on the a reward defined in `reward.py` with the combination of equation's fitting accuracy and complexity. To run the script for different datasets, configure the following parameters:
+We have created `run.sh` script to execute Transformer-based Planning for Automated Equation Discovery based on the reward defined in `reward.py` with the combination of equation's fitting accuracy and complexity. To run the script for different datasets, configure the following parameters:
 
 |   **Parameters**  |                                              **Description**                                             |       **Example Values**       |
 |:-----------------:|:--------------------------------------------------------------------------------------------------------:|:------------------------------:|
-| `eval_in_domain`    | Evaluate Backbone Pre-trained Model on In-Domain Dataset (Yes/No)                                | True/False      |
-| `eval_mcts_in_domain`    | Evaluate TPSR on In-Domain Dataset (Yes/No)                                | True/False      |
-| `eval_on_pmlb`        | Evaluate Backbone Pre-trained Model on PMLB (Yes/No)                                                                     | True/False |
+| `eval_in_domain`    | Evaluate backbone pre-trained model on In-Domain dataset (Yes/No)                                | True/False      |
+| `eval_mcts_in_domain`    | Evaluate TPSR on In-Domain dataset (Yes/No)                                | True/False      |
+| `eval_on_pmlb`        | Evaluate backbone pre-trained model on PMLB (Yes/No)                                                                     | True/False |
 | `eval_mcts_on_pmlb`    | Evaluate TPSR on PMLB (Yes/No)                                  | True/False       |
-| `horizon`    | Horizon of Lookahead Planning (MaxLen of Equations)                                 | 200      |
-| `rollout`    | Number of Rollouts ($r$) in TPSR                                 | 3      |
-| `num_beams`    | Beam Size ($b$) in TPSR's Evaluation Step to Simulate Completed Equations                                | 1      |
+| `horizon`    | Horizon of lookahead planning (maxlen of equation tokens)                                 | 200      |
+| `rollout`    | Number of rollouts ($r$) in TPSR                                 | 3      |
+| `num_beams`    | Beam size ($b$) in TPSR's evaluation step to simulate completed equations                                | 1      |
 | `width`    |  Top-k ($k$) in TPSR's Expansion Step to Expand Tree Width                                | 3     |
-| `no_seq_cache`    | Use Sequence Caching (Yes/No)                                 | False     |
-| `no_prefix_cache`    | Use Top-k Caching (Yes/No)                                   | False     |
-| `ucb_constant`    | Exploration Weight in UCB                                 | 1.0     |
-| `uct_alg`    | UCT Algorithm $\in$ {uct, p_uct, var_p_uct}                                 | uct     |
-| `max_input_points`    | Maximum Input Points Observed by Pre-trained Model ($N$)                                 | 200     |
-| `max_number_bags`    | Maximum Number of Bags for Input Points ($B$)                                | 10     |
-| `pmlb_data_type`    | PMLB Data Group $\in$ {feynman, strogatz, black-box}                                 | feynman     |
-| `target_noise`    | Target Noise added to y_to_fit in PMLB                                | 0.0     |
-| `beam_type`    | Decoding Type for Pre-trained Models $\in$ {search, sampling}                                | sampling     |
-| `beam_size`    | Decoding Size ($s$) for Pre-trained Models (Beam Size, or Sampling Size)                                | 10     |
-| `n_trees_to_refine`    | Number of Refinements in Decodings $\in$ {1,..., $s$ }                                | 10     |
-| `prediction_sigmas`    | Sigmas of Extrapolation Eval Data Sampling (In-domain)                                | 1,2,4,8,16     |
-| `eval_input_length_modulo`    | Number of Eval Points (In-domain). Set to 50 Yields $N_{test}=[50,100,150,200]$ per Extrapolation Range.                               | 50     |
+| `no_seq_cache`    | Use sequence caching (Yes/No)                                 | False     |
+| `no_prefix_cache`    | Use top-k caching (Yes/No)                                   | False     |
+| `ucb_constant`    | Exploration weight in UCB                                 | 1.0     |
+| `uct_alg`    | UCT algorithm $\in$ {uct, p_uct, var_p_uct}                                 | uct     |
+| `max_input_points`    | Maximum input points observed by pre-trained model ($N$)                                 | 200     |
+| `max_number_bags`    | Maximum number of bags for input points ($B$)                                | 10     |
+| `pmlb_data_type`    | PMLB data group $\in$ {feynman, strogatz, black-box}                                 | feynman     |
+| `target_noise`    | Target noise added to y_to_fit in PMLB                                | 0.0     |
+| `beam_type`    | Decoding type for pre-trained models $\in$ {search, sampling}                                | sampling     |
+| `beam_size`    | Decoding size ($s$) for pre-trained models (beam size, or sampling size)                                | 10     |
+| `n_trees_to_refine`    | Number of refinements in decodings $\in$ {1,..., $s$ }                                | 10     |
+| `prediction_sigmas`    | Sigmas of extrapolation eval data sampling (In-domain)                                | 1,2,4,8,16     |
+| `eval_input_length_modulo`    | Number of eval points (In-domain). Set to 50 yields $N_{test}=[50,100,150,200]$ per extrapolation range.                               | 50     |
 
 
 ## Run - PMLB Datasets (Feynman/ Strogatz/ Blackbox)
