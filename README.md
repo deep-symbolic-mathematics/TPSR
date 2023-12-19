@@ -44,9 +44,9 @@ We have created `run.sh` script to execute Transformer-based Planning for Equati
 |   **Parameters**  |                                              **Description**                                             |       **Example Values**       |
 |:-----------------:|:--------------------------------------------------------------------------------------------------------:|:------------------------------:|
 | `eval_in_domain`    | Evaluate Backbone Pre-trained Model on In-Domain Dataset (Yes/No)                                | True/False      |
-| `eval_mcts_in_domain`    | Evaluae TPSR on In-Domain Dataset (Yes/No)                                | True/False      |
-| `eval_on_pmlb`        | Evaluae Backbone Pre-trained Model on PMLB (Yes/No)                                                                     | True/False |
-| `eval_mcts_on_pmlb`    | Evaluae TPSR on PMLB (Yes/No)                                  | True/False       |
+| `eval_mcts_in_domain`    | Evaluate TPSR on In-Domain Dataset (Yes/No)                                | True/False      |
+| `eval_on_pmlb`        | Evaluate Backbone Pre-trained Model on PMLB (Yes/No)                                                                     | True/False |
+| `eval_mcts_on_pmlb`    | Evaluate TPSR on PMLB (Yes/No)                                  | True/False       |
 | `horizon`    | Horizon of Lookahead Planning (MaxLen of Equations)                                 | 200      |
 | `rollout`    | Number of Rollouts ($r$) in TPSR                                 | 3      |
 | `num_beams`    | Beam Size ($b$) in TPSR's Evaluation Step to Simulate Completed Equations                                | 1      |
@@ -61,7 +61,7 @@ We have created `run.sh` script to execute Transformer-based Planning for Equati
 | `target_noise`    | Target Noise added to y_to_fit in PMLB                                | 0.0     |
 | `beam_type`    | Decoding Type for Pre-trained Models $\in$ {search, sampling}                                | sampling     |
 | `beam_size`    | Decoding Size ($s$) for Pre-trained Models (Beam Size, or Sampling Size)                                | 10     |
-| `n_trees_to_refine`    | Number of Refinements in Decodings $\in$ {1,...,$s$}                                | 10     |
+| `n_trees_to_refine`    | Number of Refinements in Decodings $\in$ {1,..., $s$ }                                | 10     |
 | `prediction_sigmas`    | Sigmas of Extrapolation Eval Data Sampling (In-domain)                                | 1,2,4,8,16     |
 | `eval_input_length_modulo`    | Number of Eval Points (In-domain). Set to 50 Yields $N_{test}=[50,100,150,200]$ per Extrapolation Range.                               | 50     |
 
@@ -168,7 +168,7 @@ We have also included a small demo that runs TPSR with E2E backbone on your data
 
 
 ## Citation
-If you find the paper or the source code useful to your projects, please cite the following:
+If you find the paper or the repo helpful to your project, please cite it with
 <pre>
 @inproceedings{
 tpsr2023,
