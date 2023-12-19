@@ -168,7 +168,7 @@ We have also included a small demo that runs TPSR with E2E backbone on your data
 
 
 ## Citation
-If you find the paper or the repo helpful to your project, please cite it with
+If you find the paper or the repo helpful, please cite it with
 <pre>
 @inproceedings{
 tpsr2023,
