@@ -50,7 +50,7 @@ We have created `run.sh` script to execute Transformer-based Planning for Automa
 | `horizon`    | Horizon of lookahead planning (maxlen of equation tokens)                                 | 200      |
 | `rollout`    | Number of rollouts ($r$) in TPSR                                 | 3      |
 | `num_beams`    | Beam size ($b$) in TPSR's evaluation step to simulate completed equations                                | 1      |
-| `width`    |  Top-k ($k$) in TPSR's Expansion Step to Expand Tree Width                                | 3     |
+| `width`    |  Top-k ($k$) in TPSR's expansion step to expand tree width                                | 3     |
 | `no_seq_cache`    | Use sequence caching (Yes/No)                                 | False     |
 | `no_prefix_cache`    | Use top-k caching (Yes/No)                                   | False     |
 | `ucb_constant`    | Exploration weight in UCB                                 | 1.0     |
