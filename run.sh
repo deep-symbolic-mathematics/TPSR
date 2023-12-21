@@ -15,7 +15,7 @@ python run.py --eval_mcts_on_pmlb True \
 
 
 python run.py --eval_mcts_on_pmlb True \
-                   --pmlb_data_type \
+                   --pmlb_data_type strogatz \
                    --target_noise 0.0 \
                    --lam 0.1 \
                    --horizon 200 \
