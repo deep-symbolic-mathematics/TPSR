@@ -19,6 +19,7 @@ To run the code, create a conda ``Python 3.7`` environment and install the depen
 
 ```
 conda create --name tpsr python=3.7
+conda activate tpsr
 pip install -r requirements.txt
 ```
 
