@@ -160,8 +160,7 @@ python run.py --eval_mcts_in_domain True \
                    --debug
 ```
 
-## Runs With NeSymReS Backbone
-Will be released soon.
+
 
 
 ## Demo
