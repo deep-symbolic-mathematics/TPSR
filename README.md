@@ -180,14 +180,14 @@ python run.py --eval_mcts_in_domain True \
 ## Demo
 We have also included a small demo that runs TPSR with both E2E and NesymReS backbones on your dataset. You can play with it [here](./tpsr_demo.py) 
 
-TPSR+E2E:
+E2E+TPSR
 ```
 python tpsr_demo.py --backbone_model e2e \
                    --no_seq_cache True \
                    --no_prefix_cache True
 ```
 
-TPSR+NeSymReS:
+NeSymReS+TPSR:
 ```
 python tpsr_demo.py --backbone_model nesymres \
                    --no_seq_cache True \
