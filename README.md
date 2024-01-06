@@ -30,10 +30,10 @@ Extract the datasets to this directory, Feynman datasets should be in `datasets/
 
 ## Installation
 
-To run the code with deafult [E2E](https://arxiv.org/pdf/2204.10532.pdf) backbone model, create a conda ``Python 3.7`` environment and install the dependencies by running the following command.
+To run the code with deafult [E2E](https://arxiv.org/pdf/2204.10532.pdf) backbone model, create a conda environment and install the dependencies by running the following command.
 
 ```
-conda create --name tpsr python=3.7
+conda create --name tpsr
 conda activate tpsr
 pip install -r requirements.txt
 ```
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 If you're interested to run experiments with [NeSymReS](https://arxiv.org/pdf/2106.06427.pdf) backbone, install its additional dependencies from [here](https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales). You can follow these steps:
 
 ```
-conda create --name tpsr python=3.7
+conda create --name tpsr
 conda activate tpsr
 cd nesymres
 pip install -e src/
@@ -57,6 +57,7 @@ We have created `run.sh` script to execute Transformer-based Planning for Automa
 
 |   **Parameters**  |                                              **Description**                                             |       **Example Values**       |
 |:-----------------:|:--------------------------------------------------------------------------------------------------------:|:------------------------------:|
+| `backbone_model`    | Backbone Pre-trained Model Type (e2e/nesymres)                                | e2e      |
 | `eval_in_domain`    | Evaluate backbone pre-trained model on In-Domain dataset (Yes/No)                                | True/False      |
 | `eval_mcts_in_domain`    | Evaluate TPSR on In-Domain dataset (Yes/No)                                | True/False      |
 | `eval_on_pmlb`        | Evaluate backbone pre-trained model on PMLB (Yes/No)                                                                     | True/False |
