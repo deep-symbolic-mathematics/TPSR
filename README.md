@@ -17,7 +17,7 @@ In this paper, we introduce **TPSR**, a novel transformer-based planning framewo
 <!-- ### Download Manually -->
 1. Download Pre-trained Models:
     * **End-to-End (E2E) SR Transformer model** is available [here](https://dl.fbaipublicfiles.com/symbolicregression/model1.pt).
-    * **NeSymReS model** is available [here]([https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales](https://drive.google.com/file/d/1cNZq3dLnSUKEm-ujDl2mb2cCCorv7kOC/view)).
+    * **NeSymReS model** is available [here](https://drive.google.com/file/d/1cNZq3dLnSUKEm-ujDl2mb2cCCorv7kOC/view).
       
 After downloading, extract both models to this directory. They should be located under the `symbolicregression/weights/` and `nesymres/weights/` sub-folders, respectively.
 
