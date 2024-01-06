@@ -38,7 +38,7 @@ conda activate tpsr
 pip install -r requirements.txt
 ```
 
-If you're interested to run experiments with [NeSymReS](https://arxiv.org/pdf/2106.06427.pdf) backbone, first install its dependencies from [here](https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales). You can follow these steps:
+If you're interested to run experiments with [NeSymReS](https://arxiv.org/pdf/2106.06427.pdf) backbone, install its additional dependencies from [here](https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales). You can follow these steps:
 
 ```
 conda create --name tpsr python=3.7
