@@ -13,6 +13,21 @@ In this paper, we introduce **TPSR**, a novel transformer-based planning framewo
 </p>
 
 
+## Preperation: Data and Pre-trained Backbone Models 
+<!-- ### Download Manually -->
+1. Download Pre-trained Models:
+    * **End-to-End (E2E) SR Transformer model** is available [here](https://dl.fbaipublicfiles.com/symbolicregression/model1.pt).
+    * **NeSymReS model** is available [here]([https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales](https://drive.google.com/file/d/1cNZq3dLnSUKEm-ujDl2mb2cCCorv7kOC/view)).
+      
+After downloading, extract both models to this directory. They should be located under the `symbolicregression/weights/` and `nesymres/weights/` sub-folders, respectively.
+
+2. Download Benchmark Datasets:
+    * **Feynman** equations are [here](https://space.mit.edu/home/tegmark/aifeynman.html)
+    * **PMLB** datasets are also [here](https://github.com/EpistasisLab/pmlb/tree/master/datasets). Data points of PMLB datasets are used in the [SRBench (A Living Benchmark for Symbolic Regression)](https://github.com/cavalab/srbench), containing three data groups: **Feynman**, **Strogatz**, and **Black-box**.
+      
+Extract the datasets to this directory, Feynman datasets should be in `datasets/feynman/`, and PMLB datasets should be in `datasets/pmlb/`. 
+
+
 ## Installation
 
 To run the code, create a conda ``Python 3.7`` environment and install the dependencies by running the following command.
@@ -23,20 +38,6 @@ conda activate tpsr
 pip install -r requirements.txt
 ```
 
-
-## Preperation: Data and Pre-trained Backbone Models 
-<!-- ### Download Manually -->
-1. Download Pre-trained Models:
-    * **End-to-End (E2E) SR Transformer model** is available [here](https://dl.fbaipublicfiles.com/symbolicregression/model1.pt).
-    * **NeSymReS model** is available [here](https://github.com/SymposiumOrganization/NeuralSymbolicRegressionThatScales).
-      
-After downloading, extract both models to this directory. They should be located under the `pretrained_models/` folder.
-
-2. Download Benchmark Datasets:
-    * **Feynman** equations are [here](https://space.mit.edu/home/tegmark/aifeynman.html)
-    * **PMLB** datasets are also [here](https://github.com/EpistasisLab/pmlb/tree/master/datasets). Data points of PMLB datasets are used in the [SRBench (A Living Benchmark for Symbolic Regression)](https://github.com/cavalab/srbench), containing three data groups: **Feynman**, **Strogatz**, and **Black-box**.
-      
-Extract the datasets to this directory, Feynman datasets should be in `datasets/feynman/`, and PMLB datasets should be in `datasets/pmlb/`. 
 
 
 ## Run
