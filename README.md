@@ -178,7 +178,22 @@ python run.py --eval_mcts_in_domain True \
 
 
 ## Demo
-We have also included a small demo that runs TPSR with E2E backbone on your dataset. You can play with it [here](./tpsr_demo.py) 
+We have also included a small demo that runs TPSR with both E2E and NesymReS backbones on your dataset. You can play with it [here](./tpsr_demo.py) 
+
+TPSR+E2E:
+```
+python tpsr_demo.py --backbone_model e2e \
+                   --no_seq_cache True \
+                   --no_prefix_cache True \
+``
+
+TPSR+NeSymReS:
+```
+python tpsr_demo.py --backbone_model nesymres \
+                   --no_seq_cache True \
+                   --no_prefix_cache True \
+``
+
 
 
 ## Citation
