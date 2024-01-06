@@ -14,6 +14,8 @@ def get_parser():
    
     # parse parameters
     parser = argparse.ArgumentParser(description="Function prediction", add_help=False)
+    
+    parser.add_argument("--backbone_model", type=str, default="e2e", help="e2e or nesymres")
 
      ## args MCTS
     parser.add_argument(

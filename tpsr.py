@@ -1,6 +1,6 @@
 import json
 import time
-from model import Transformer
+from symbolicregression.e2e_model import Transformer
 
 from dyna_gym.agents.uct import UCT
 from dyna_gym.agents.mcts import update_root, convert_to_json
