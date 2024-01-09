@@ -182,16 +182,12 @@ We have also included a small demo that runs TPSR with both E2E and NesymReS bac
 
 E2E+TPSR:
 ```
-python tpsr_demo.py --backbone_model e2e \
-                   --no_seq_cache True \
-                   --no_prefix_cache True
+python tpsr_demo.py --backbone_model e2e --no_seq_cache True --no_prefix_cache True
 ```
 
 NeSymReS+TPSR:
 ```
-python tpsr_demo.py --backbone_model nesymres \
-                   --no_seq_cache True \
-                   --no_prefix_cache True
+python tpsr_demo.py --backbone_model nesymres --no_seq_cache True --no_prefix_cache True
 ```
 
 
