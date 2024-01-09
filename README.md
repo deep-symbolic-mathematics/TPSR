@@ -82,25 +82,12 @@ We have created `run.sh` script to execute Transformer-based Planning for Automa
 
 
 ## Run - PMLB Datasets (Feynman/ Strogatz/ Blackbox)
-Pre-trained E2E Model (Sampling):
+Pre-trained E2E Model (Sampling / Beam Search):
 ```
 python run.py --eval_on_pmlb True \
                    --pmlb_data_type feynman \
                    --target_noise 0.0 \
-                   --beam_type sampling \
-                   --beam_size 10 \
-                   --n_trees_to_refine 10 \
-                   --max_input_points 200 \
-                   --max_number_bags 10 \
-                   --save_results True
-```
-
-Pre-trained E2E Model (Beam Search):
-```
-python run.py --eval_on_pmlb True \
-                   --pmlb_data_type feynman \
-                   --target_noise 0.0 \
-                   --beam_type search \
+                   --beam_type sampling \ # or search
                    --beam_size 10 \
                    --n_trees_to_refine 10 \
                    --max_input_points 200 \
@@ -133,22 +120,10 @@ For running the code on Strogatz or Black-box datasets, simply adjust the `pmlb_
 **In-Domain** datasets are generated, following the validation data gneration protocol suggested in [E2E](https://arxiv.org/pdf/2204.10532.pdf). For details, refer to the `generate_datapoints` function [here](./symbolicregression/envs/generators.py). You can also modify data generation parameters [here](./symbolicregression/envs/environment.py). For example, you can adjust parameters like `prediction_sigmas` to control extrapolation. A sigma `1` aligns with the training data range, while `>1` is for extrapolation ranges.  The In-domain validation datasets are generated on-the-fly. For consistent evaluations across models, consider setting a fixed seed.
 
 
-Pre-trained E2E Model (Sampling):
+Pre-trained E2E Model (Sampling / Beam Search):
 ```
 python run.py --eval_in_domain True \
-                   --beam_type sampling \
-                   --beam_size 10 \
-                   --n_trees_to_refine 10 \
-                   --max_input_points 200 \
-                   --eval_input_length_modulo 50 \
-                   --prediction_sigmas 1,2,4,8,16 \
-                   --save_results True
-```
-
-Pre-trained E2E Model (Beam Search):
-```
-python run.py --eval_in_domain True \
-                   --beam_type search \
+                   --beam_type sampling \ # or search
                    --beam_size 10 \
                    --n_trees_to_refine 10 \
                    --max_input_points 200 \
