@@ -2,7 +2,8 @@
 
 Official Implementation of **[Transformer-based Planning for Symbolic Regression](https://arxiv.org/abs/2303.06833)** (NeurIPS 2023). 
 
-[Paper]([https://openreview.net/forum?id=KZSEgJGPxu](https://proceedings.neurips.cc/paper_files/paper/2023/hash/8ffb4e3118280a66b192b6f06e0e2596-Abstract-Conference.html)) | [SRBench Results](https://drive.google.com/drive/u/1/folders/1AHrQylQmA25TJFk3iw-HFGGMiGbkdNie) | [Code](https://github.com/deep-symbolic-mathematics/TPSR/)
+[Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/8ffb4e3118280a66b192b6f06e0e2596-Abstract-Conference.html) | [SRBench Results](https://drive.google.com/drive/u/1/folders/1AHrQylQmA25TJFk3iw-HFGGMiGbkdNie) | [Code](https://github.com/deep-symbolic-mathematics/TPSR/)
+
 
 ## Overview
 In this paper, we introduce **TPSR**, a novel transformer-based planning framework for symbolic regression by leveraging priors of large-scale pretrained models and incorporating lookahead planning. TPSR incorporates Monte Carlo Tree Search (MCTS) into the transformer decoding process of symbolic regression models. Unlike conventional decoding strategies, TPSR enables the integration of non-differentiable feedback, such as fitting accuracy and complexity, as external sources of knowledge into the transformer-based equation generation process.
