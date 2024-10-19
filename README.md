@@ -2,7 +2,7 @@
 
 Official Implementation of **[Transformer-based Planning for Symbolic Regression](https://arxiv.org/abs/2303.06833)** (NeurIPS 2023). 
 
-[Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/8ffb4e3118280a66b192b6f06e0e2596-Abstract-Conference.html) | [SRBench Results](https://github.com/deep-symbolic-mathematics/TPSR/srbench_results/) | [Code](https://github.com/deep-symbolic-mathematics/TPSR/)
+[Paper](https://proceedings.neurips.cc/paper_files/paper/2023/hash/8ffb4e3118280a66b192b6f06e0e2596-Abstract-Conference.html) | [SRBench Results](https://github.com/deep-symbolic-mathematics/TPSR/tree/main/srbench_results) | [Code](https://github.com/deep-symbolic-mathematics/TPSR/)
 
 
 ## Overview
