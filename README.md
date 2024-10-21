@@ -169,7 +169,7 @@ python tpsr_demo.py --backbone_model nesymres --no_seq_cache True --no_prefix_ca
 
 
 ## Final Results on SRBench
-Our experimental results of E2E+TPSR on SRBench datasets are provided in the `srbench_results/` directory. These results are shared to help the research community reproduce our paper's findings and serve as reference benchmarks. Each result file contains detailed performance metrics and experimental configurations used in our evaluations.
+Our experimental results of E2E+TPSR on SRBench datasets are provided in the [srbench_results/](./srbench_results/) directory. These results are shared to help the research community reproduce our paper's findings and serve as reference benchmarks. Each result file contains detailed performance metrics and experimental configurations used in our evaluations.
 
 
 
