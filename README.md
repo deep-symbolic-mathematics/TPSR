@@ -176,13 +176,13 @@ Our experimental results of E2E+TPSR on SRBench datasets are provided in the [sr
 ## Citation
 If you find the paper or the repo helpful, please cite it with
 <pre>
-@inproceedings{
-tpsr2023,
-title={Transformer-based Planning for Symbolic Regression},
-author={Parshin Shojaee and Kazem Meidani and Amir Barati Farimani and Chandan K. Reddy},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=0rVXQEeFEL}
+@article{tpsr2023,
+  title={Transformer-based planning for symbolic regression},
+  author={Shojaee, Parshin and Meidani, Kazem and Barati Farimani, Amir and Reddy, Chandan},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={45907--45919},
+  year={2023}
 }
 </pre>
 
